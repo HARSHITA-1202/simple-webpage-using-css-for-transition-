@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: bisque;
+}
+.asharha {
+  margin: 100px auto;
+  width: 80%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.asharha img {
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+.asharha img:hover > :not(:hover) {
+  opacity: 0.3;
+}
+.asharha:hover img {
+  filter: blur(10px); /* Blur all images */
+}
+
+.asharha img:hover {
+  filter: blur(0);
+  width: 25%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
